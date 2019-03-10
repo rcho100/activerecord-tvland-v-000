@@ -11,7 +11,7 @@ class Character < ActiveRecord::Base
     #   self.send("#{property}=", value)
     # end
     show = Show.create(hash )
-    # show.name =  
+    # show.name =
     # self.show =
   end
 end
