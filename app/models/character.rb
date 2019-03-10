@@ -7,8 +7,19 @@ class Character < ActiveRecord::Base
   end
 
   def build_show(hash)
-    show = Show.create(hash )
+    # hash.each do |key, value|
+    #   self.send("#{key}=", value)
+    #   show = Show.create(hash)
+    #
+    # end
+    # end
+
+    #create a show
+    #s
     # show.name =
     # self.show =
+
+    show = Show.create(hash)
+    self.show = show
   end
 end
