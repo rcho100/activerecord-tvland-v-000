@@ -7,9 +7,6 @@ class Character < ActiveRecord::Base
   end
 
   def build_show(hash)
-    # options.each do |property, value|
-    #   self.send("#{property}=", value)
-    # end
     show = Show.create(hash )
     # show.name =
     # self.show =
