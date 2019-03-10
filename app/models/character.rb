@@ -6,11 +6,11 @@ class Character < ActiveRecord::Base
     "#{self.name} always says: #{self.catchphrase}"
   end
 
-  def build_show(options={})
+  def build_show(hash)
     # options.each do |property, value|
     #   self.send("#{property}=", value)
     # end
-    show = Show.create()
+    show = Show.create(hash )
     # show.name =  
     # self.show =
   end
